@@ -210,7 +210,7 @@ An unlimited tree memorizes every training example, including noise. More data (
 * [Regularization in Machine Learning](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a) – A deeper dive into the math behind L1 and L2 regularization and how it affects our model. (MCQ 1)
 
 * **Overfitting in Decision Trees**
-* [Overfitting and Pruning in Decision Trees](https://medium.com/nerd-for-tech/overfitting-and-pruning-in-decision-trees-improving-models-accuracy-fdbe9ecd1160) – Ovefitting in Decision trees and how to increade models accuracy using Pre-pruning, Post-Pruning and it's implementation using scikit-learn. (MCQ 5)
+* [Overfitting and Pruning in Decision Trees](https://medium.com/nerd-for-tech/overfitting-and-pruning-in-decision-trees-improving-models-accuracy-fdbe9ecd1160) – Ovefitting in Decision trees and how to increase models accuracy using Pre-pruning, Post-Pruning and it's implementation using scikit-learn. (MCQ 5)
 ---
 
 ## Day 03 — Train/Test Split & Cross-Validation
