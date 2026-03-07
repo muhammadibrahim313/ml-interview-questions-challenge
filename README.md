@@ -118,7 +118,22 @@ Supervised learning needs a "teacher" — labeled examples where both the input 
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+
+* **Types of ML (Supervised vs. Unsupervised)**
+* [MLU-Explain: Types of Machine Learning](https://www.google.com/search?q=https://mlu-explain.github.io/machine-learning-types/) – Visual interactive essay on learning paradigms.
+
+
+* **Bias-Variance Tradeoff**
+* [StatQuest: Bias and Variance](https://www.youtube.com/watch?v=EuBBz3bI-aA) – Clear explanation of model complexity (MCQ 2).
+* [Scott Fortmann-Roe: The Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) – The definitive technical article on the "sweet spot."
+
+
+* **Overfitting & Underfitting**
+* [MLU-Explain: Cross-Validation](https://mlu-explain.github.io/cross-validation/) – Visualizes how models fail on unseen data (MCQ 3).
+
+* **Foundation Summary**
+* [StatQuest: ML Fundamentals Playlist](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) – Comprehensive visual series for Day 01 topics.
+
 
 ---
 
@@ -185,8 +200,17 @@ An unlimited tree memorizes every training example, including noise. More data (
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+* **How to handle High Variance**
+* [Dealing With High Bias and Variance](https://medium.com/data-science/contents-9b2e49f49fe9) – A clear overview of Varinace, Bias, Regularization, how adding more data reduces high variance. He literally explains everything in detail in his **medium** post. (MCQ 1,2,3 & 4)
+  
+* **Overfitting and it's prevention**
+* [Overfitting - What is it and how to prevent it?](https://www.ibm.com/topics/overfitting) – A clear, high-level overview of Overfitting and the most common techniques like Lasso, Ridge, and Dropout. (MCQ 1,2 & 3)
 
+* **Regularization**
+* [Regularization in Machine Learning](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a) – A deeper dive into the math behind L1 and L2 regularization and how it affects our model. (MCQ 1)
+
+* **Overfitting in Decision Trees**
+* [Overfitting and Pruning in Decision Trees](https://medium.com/nerd-for-tech/overfitting-and-pruning-in-decision-trees-improving-models-accuracy-fdbe9ecd1160) – Ovefitting in Decision trees and how to increase models accuracy using Pre-pruning, Post-Pruning and it's implementation using scikit-learn. (MCQ 5)
 ---
 
 ## Day 03 — Train/Test Split & Cross-Validation
