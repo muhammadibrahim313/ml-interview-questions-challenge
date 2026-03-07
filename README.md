@@ -118,7 +118,22 @@ Supervised learning needs a "teacher" — labeled examples where both the input 
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+
+* **Types of ML (Supervised vs. Unsupervised)**
+* [MLU-Explain: Types of Machine Learning](https://www.google.com/search?q=https://mlu-explain.github.io/machine-learning-types/) – Visual interactive essay on learning paradigms.
+
+
+* **Bias-Variance Tradeoff**
+* [StatQuest: Bias and Variance](https://www.youtube.com/watch?v=EuBBz3bI-aA) – Clear explanation of model complexity (MCQ 2).
+* [Scott Fortmann-Roe: The Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) – The definitive technical article on the "sweet spot."
+
+
+* **Overfitting & Underfitting**
+* [MLU-Explain: Cross-Validation](https://mlu-explain.github.io/cross-validation/) – Visualizes how models fail on unseen data (MCQ 3).
+
+* **Foundation Summary**
+* [StatQuest: ML Fundamentals Playlist](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) – Comprehensive visual series for Day 01 topics.
+
 
 ---
 
