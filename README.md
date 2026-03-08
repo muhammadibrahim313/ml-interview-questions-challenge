@@ -276,7 +276,25 @@ Data leakage is accidental cheating. Example: normalizing the ENTIRE dataset (in
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+* **Train/Test Split & Generalization**
+* [MLU-Explain: Train, Test, and Validation](https://mlu-explain.github.io/train-test-validation/) – Interactive visualization showing why we need unseen data (MCQ 1).
+* [StatQuest: Training and Testing](https://www.youtube.com/watch?v=fSytzGwwBVw) – A simple, visual breakdown of the basic split logic.
+
+
+* **K-Fold Cross-Validation**
+* [Scikit-Learn: Cross-Validation Guide](https://scikit-learn.org/stable/modules/cross_validation.html) – The industry standard visual for how folds rotate (MCQ 2 & 3).
+* [StatQuest: K-fold Cross-Validation](https://www.youtube.com/watch?v=fSytzGwwBVw) – Visualizes how the model trains $k$ times to get a reliable average.
+
+
+* **Stratified Splits**
+* [Machine Learning Mastery: Stratified K-Fold](https://www.google.com/search?q=https://machinelearningmastery.com/cross-validation-iterator-algorithms-in-python/) – Explains why maintaining class distribution matters for imbalanced data (MCQ 4).
+
+
+* **Data Leakage (The "Cheating" Problem)**
+* [Kaggle: Data Leakage](https://www.kaggle.com/code/alexisbcook/data-leakage) – A critical tutorial on how to avoid accidentally letting test info into training (MCQ 5).
+* [Towards Data Science: Data Leakage in ML](https://towardsdatascience.com/data-leakage-in-machine-learning-6161c167e8ba/) – Practical examples of what to watch out for during preprocessing.
+
+
 
 ---
 
