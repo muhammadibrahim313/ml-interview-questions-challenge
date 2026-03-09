@@ -361,7 +361,24 @@ If "height in cm" and "height in inches" are both features, they're perfectly co
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+> 
+* **Core Concepts & Slope Intuition (MCQ 1 & 2)**
+* [StatQuest: Linear Regression Step-by-Step](https://www.youtube.com/watch?v=PaFPbb66DxQ) — The absolute best visual breakdown of how the line is fitted and what the slope actually means.
+
+
+* **Cost Function: Mean Squared Error (MCQ 3)**
+* [MLU-Explain: Linear Regression](https://mlu-explain.github.io/linear-regression/) — An interactive essay where you can move data points and see how the MSE "penalizes" the error visually.
+* [Cost Function Mathematical Explanation](https://builtin.com/machine-learning/cost-function)
+
+
+* **Model Evaluation: R-Squared (MCQ 4)**
+* [StatQuest: R-squared Explained](https://www.youtube.com/watch?v=2AQKmw14mHM) — Explains $R^2$ as "Variation explained by the model / Total variation" using clear, simple charts.
+
+* **The Problem of Multicollinearity (MCQ 5)**
+* [Towards Data Science: Multicollinearity in Regression](https://towardsdatascience.com/handling-multi-collinearity-6579eb99fd81/) — Explains why correlated features make coefficients "unstable" and how to detect it using VIF (Variance Inflation Factor).
+* [Statistics by Jim: Multicollinearity](https://statisticsbyjim.com/regression/multicollinearity-in-regression-analysis/) — A great resource for understanding the "hidden" problems that occur when features overlap.
+
+
 
 ---
 
