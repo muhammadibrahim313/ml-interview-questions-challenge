@@ -445,7 +445,17 @@ MSE squares errors, so one huge outlier dominates. MAE takes absolute values —
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+* **Assumptions of Linear Regression and Homoscedasticity**
+* [Asssumptions of Linear Regression](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/) – This is one of the most comprehensive articles for beginners. It specifically addresses Homoscedasticity (Question 2) and the Independence of residuals (Question 1) with clear "Funnel" and "Random" scatter plot examples.
+
+* **R² and Adjusted R²**
+* [How Adjusted R² differs and penalize the features](https://alok05.medium.com/r-squared-and-adjusted-r-squared-in-machine-learning-33df28d54ca4) - A deep understanding of R² and Adusted R² with examples and intuition.
+
+* **Residual analysis**
+* [Residual plots and Non-linearity](https://www.geeksforgeeks.org/machine-learning/residual-plots-for-nonlinear-regression/) - This resource explains the residual analysis, it's purposes, how to plot and spot non-linearity in data.
+
+* **MAE and MSE**
+* [How MAE is more Robust to ouliers](https://hackernoon.com/my-notes-on-mae-vs-mse-error-metrics) - A Detailed explanaltion of MAE and MSE.
 
 ---
 
