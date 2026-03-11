@@ -276,7 +276,25 @@ Data leakage is accidental cheating. Example: normalizing the ENTIRE dataset (in
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+* **Train/Test Split & Generalization**
+* [MLU-Explain: Train, Test, and Validation](https://mlu-explain.github.io/train-test-validation/) – Interactive visualization showing why we need unseen data (MCQ 1).
+* [StatQuest: Training and Testing](https://www.youtube.com/watch?v=fSytzGwwBVw) – A simple, visual breakdown of the basic split logic.
+
+
+* **K-Fold Cross-Validation**
+* [Scikit-Learn: Cross-Validation Guide](https://scikit-learn.org/stable/modules/cross_validation.html) – The industry standard visual for how folds rotate (MCQ 2 & 3).
+* [StatQuest: K-fold Cross-Validation](https://www.youtube.com/watch?v=fSytzGwwBVw) – Visualizes how the model trains $k$ times to get a reliable average.
+
+
+* **Stratified Splits**
+* [Machine Learning Mastery: Stratified K-Fold](https://www.google.com/search?q=https://machinelearningmastery.com/cross-validation-iterator-algorithms-in-python/) – Explains why maintaining class distribution matters for imbalanced data (MCQ 4).
+
+
+* **Data Leakage (The "Cheating" Problem)**
+* [Kaggle: Data Leakage](https://www.kaggle.com/code/alexisbcook/data-leakage) – A critical tutorial on how to avoid accidentally letting test info into training (MCQ 5).
+* [Towards Data Science: Data Leakage in ML](https://towardsdatascience.com/data-leakage-in-machine-learning-6161c167e8ba/) – Practical examples of what to watch out for during preprocessing.
+
+
 
 ---
 
@@ -343,7 +361,24 @@ If "height in cm" and "height in inches" are both features, they're perfectly co
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+> 
+* **Core Concepts & Slope Intuition (MCQ 1 & 2)**
+* [StatQuest: Linear Regression Step-by-Step](https://www.youtube.com/watch?v=PaFPbb66DxQ) — The absolute best visual breakdown of how the line is fitted and what the slope actually means.
+
+
+* **Cost Function: Mean Squared Error (MCQ 3)**
+* [MLU-Explain: Linear Regression](https://mlu-explain.github.io/linear-regression/) — An interactive essay where you can move data points and see how the MSE "penalizes" the error visually.
+* [Cost Function Mathematical Explanation](https://builtin.com/machine-learning/cost-function)
+
+
+* **Model Evaluation: R-Squared (MCQ 4)**
+* [StatQuest: R-squared Explained](https://www.youtube.com/watch?v=2AQKmw14mHM) — Explains $R^2$ as "Variation explained by the model / Total variation" using clear, simple charts.
+
+* **The Problem of Multicollinearity (MCQ 5)**
+* [Towards Data Science: Multicollinearity in Regression](https://towardsdatascience.com/handling-multi-collinearity-6579eb99fd81/) — Explains why correlated features make coefficients "unstable" and how to detect it using VIF (Variance Inflation Factor).
+* [Statistics by Jim: Multicollinearity](https://statisticsbyjim.com/regression/multicollinearity-in-regression-analysis/) — A great resource for understanding the "hidden" problems that occur when features overlap.
+
+
 
 ---
 
@@ -410,7 +445,17 @@ MSE squares errors, so one huge outlier dominates. MAE takes absolute values —
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+* **Assumptions of Linear Regression and Homoscedasticity**
+* [Asssumptions of Linear Regression](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/) – This is one of the most comprehensive articles for beginners. It specifically addresses Homoscedasticity (Question 2) and the Independence of residuals (Question 1) with clear "Funnel" and "Random" scatter plot examples.
+
+* **R² and Adjusted R²**
+* [How Adjusted R² differs and penalize the features](https://alok05.medium.com/r-squared-and-adjusted-r-squared-in-machine-learning-33df28d54ca4) - A deep understanding of R² and Adusted R² with examples and intuition.
+
+* **Residual analysis**
+* [Residual plots and Non-linearity](https://www.geeksforgeeks.org/machine-learning/residual-plots-for-nonlinear-regression/) - This resource explains the residual analysis, it's purposes, how to plot and spot non-linearity in data.
+
+* **MAE and MSE**
+* [How MAE is more Robust to ouliers](https://hackernoon.com/my-notes-on-mae-vs-mse-error-metrics) - A Detailed explanaltion of MAE and MSE.
 
 ---
 
