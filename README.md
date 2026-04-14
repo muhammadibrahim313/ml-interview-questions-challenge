@@ -522,7 +522,6 @@ Logistic regression creates a linear decision boundary. For non-linear boundarie
 
 ### Resources
 
-### Resources
 
   * **Logistic Regression Overview (MCQ 1 & 2)**
 
@@ -616,7 +615,25 @@ If 95% aren't spam and the model always says "not spam," it's correct 95% of the
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+### 🔹 Core Concepts (MCQ 1–3)
+* [Google ML Crash Course – Classification Metrics](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall)
+  Clear explanations of confusion matrix, precision, and recall with simple visuals.
+* [StatQuest with Josh Starmer – Confusion Matrix](https://www.youtube.com/watch?v=Kdsp6soqA7o)
+  Short and visual explanation of TP, FP, TN, FN.
+
+### 🔹 Precision vs Recall (MCQ 2–4)
+* [StatQuest with Josh Starmer – Precision & Recall](https://www.youtube.com/watch?v=vP06aMoz4v8)
+  Intuition behind precision vs recall and when each matters.
+* [Machine Learning Mastery – Precision vs Recall Guide](https://machinelearningmastery.com/precision-recall-and-f-measure-for-imbalanced-classification/)
+  Good practical examples, especially for imbalanced data.
+
+### 🔹 Accuracy Pitfall (MCQ 5)
+* [Kaggle – Classification Metrics](https://www.kaggle.com/code/alexisbcook/classification-metrics)
+  Shows why high accuracy can be misleading.
+
+### 🔹 Optional Visualization
+* [TensorFlow Playground](https://playground.tensorflow.org/)
+  Visualize classification behavior and model errors interactively.
 
 ---
 
