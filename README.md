@@ -522,7 +522,34 @@ Logistic regression creates a linear decision boundary. For non-linear boundarie
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+### Resources
+
+  * **Logistic Regression Overview (MCQ 1 & 2)**
+
+      * [Google ML Crash Course: Logistic Regression](https://developers.google.com/machine-learning/crash-course/logistic-regression/calculating-a-probability) – Interactive module explaining why logistic regression is for classification and how it calculates probability.
+      * [Scikit-Learn: Logistic Regression Guide](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) – The industry-standard technical documentation for implementation and logic.
+
+  * **The Sigmoid Function (MCQ 3)**
+
+      * [Desmos Interactive Graph: Sigmoid](https://www.desmos.com/calculator/coknirwubg) – A live tool where you can adjust variables to see how the S-curve squashes values into the (0, 1) range.
+      * [Wolfram MathWorld: Sigmoid Function](https://mathworld.wolfram.com/SigmoidFunction.html) – Concise mathematical definition and properties of the sigmoid.
+
+  * **Binary Cross-Entropy / Log Loss (MCQ 4)**
+
+      * [ML-Cheatsheet: Logistic Regression Loss](https://www.datacamp.com/tutorial/loss-function-in-machine-learning) – A clean, visual breakdown of the math behind Log Loss and how it penalizes errors.
+      * [Neptune.ai: Binary Cross Entropy Explained](https://towardsdatascience.com/cross-entropy-negative-log-likelihood-and-all-that-jazz-47a95bd2e81/) – Deep dive into why we use Log Loss instead of MSE for classification.
+
+  * **Decision Boundaries (MCQ 5)**
+
+      * [TensorFlow Playground](https://playground.tensorflow.org/) – Set "Problem Type" to Classification and "Activation" to Sigmoid to interactively see the linear decision boundary in action.
+      * [Visualizing Decision Boundaries](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html) – Comparison plots showing the linear nature of Logistic Regression versus non-linear classifiers.
+
+| Concept | Key Property | Mathematical Intuition |
+| :--- | :--- | :--- |
+| **Output** | Probability | Value between 0 and 1 |
+| **Activation** | Sigmoid | $\sigma(z) = \frac{1}{1 + e^{-z}}$ |
+| **Loss** | Log Loss | Penalizes confident wrong answers |
+| **Boundary** | Linear | A straight line or flat plane |
 
 ---
 
