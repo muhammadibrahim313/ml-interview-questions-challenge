@@ -700,9 +700,29 @@ AUC=1.0 means the model can perfectly rank all positives above all negatives. On
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**F1 Score Harmonic Mean of Precision & Recall (MCQ 1 & 4)**
 
----
+- [Why F1 uses Harmonic Mean, not Arithmetic Mean — Medium](https://medium.com/@Suraj_Yadav/why-is-the-f1-score-the-harmonic-mean-of-precision-and-recall-rather-than-the-arithmetic-mean-2573ab99e49c) 
+
+- [F1 Score in Machine Learning — Encord](https://encord.com/blog/f1-score-in-machine-learning/) 
+
+- [Scikit-Learn: F1 Score Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html) 
+
+**ROC Curve — TPR vs FPR (MCQ 3)**
+
+- [StatQuest: ROC and AUC, Clearly Explained!  YouTube](https://www.youtube.com/watch?v=4jRBRDbJemM) 
+
+- [MLU-Explain: ROC and AUC — Interactive](https://mlu-explain.github.io/roc-auc/)
+
+- [Google ML Crash Course: ROC and AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) 
+
+**AUC Interpretation — 0.5, 1.0, and What They Mean (MCQ 2 & 5)**
+
+- [DataSchool: ROC Curves and AUC Explained (Video + Transcript)](https://www.dataschool.io/roc-curves-and-auc-explained/) 
+
+- [Evidently AI: How to Explain ROC AUC](https://www.evidentlyai.com/classification-metrics/explain-roc-curve)
+
+- [DataCamp: AUC and ROC Curve Tutorial](https://www.datacamp.com/tutorial/auc) 
 
 ## Day 09 — Multi-class Metrics
 
