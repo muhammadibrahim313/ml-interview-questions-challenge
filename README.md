@@ -787,9 +787,34 @@ Micro pools all predictions across classes: total TP / (total TP + total FP). Th
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Macro vs Micro Averaging — F1 in Multi-class (MCQ 1 & 5)**
 
----
+- [Micro, Macro & Weighted Averages of F1 Score — Towards Data Science](https://towardsdatascience.com/micro-macro-weighted-averages-of-f1-score-clearly-explained-b603420b292f/)
+
+- [Scikit-Learn: F1 Score Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html)
+
+- [Understanding Macro F1 Score  Medium](https://medium.com/@sushma.mullamuri420/understanding-the-macro-f1-score-in-multi-class-classification-21ca00c200da)
+
+**Cohen's Kappa — Agreement Beyond Chance (MCQ 2)**
+
+- [Cohen's Kappa Explained  Built In](https://builtin.com/data-science/cohens-kappa)
+
+- [Cohen's Kappa and Its Use in ML  Explained](https://mlexplained.blog/2024/01/08/cohens-kappa-and-its-use-in-ml/)
+
+- [Cohen's Kappa: What It Is, When to Use It  The New Stack](https://thenewstack.io/cohens-kappa-what-it-is-when-to-use-it-and-how-to-avoid-its-pitfalls/)
+
+**Log Loss — Penalizing Confident Wrong Predictions (MCQ 3)**
+
+- [Understanding Binary Cross-Entropy / Log Loss  Towards Data Science](https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a/)
+
+- [A Gentle Introduction to Cross-Entropy  Machine Learning Mastery](https://machinelearningmastery.com/cross-entropy-for-machine-learning/)
+
+**Specificity / True Negative Rate (MCQ 4)**
+
+- [Sensitivity and Specificity - Wikipedia](https://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+
+- [Specificity - GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/what-is-specificity/)
+
 
 ## Day 10 — Decision Trees
 
