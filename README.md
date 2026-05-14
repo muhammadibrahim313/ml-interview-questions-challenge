@@ -1214,7 +1214,16 @@ Since NB multiplies probabilities, one zero kills everything. Fix: Laplace smoot
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+-  [Naive Bayes Classifier Explained: Assumptions, Types, and Uses](https://medium.com/@kavyasrirelangi100/naive-bayes-classifier-explained-assumptions-types-and-uses-bef767a758a3)
+
+- [Naive Bayes Classifier Explained With Practical Problems](https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/)
+  To understand why assuming features are independent is considered "naive," and why it works so well for high-dimensional text data like spam detection. 
+
+- [Bayes' Theorem Components: The Prior (Q3)](https://www.mathsisfun.com/data/bayes-theorem.html) this page offers one of the clearest mathematical breakdowns of the Prior, Posterior, and Evidence using real-world examples like fire and smoke.
+
+- [Gaussian Distribution (Q4)](https://scikit-learn.org/stable/modules/naive_bayes.html) When working with continuous data (like real-valued measurements) instead of word counts, the model assumes a "Normal" or Gaussian distribution.
+
+- [The "Zero Frequency" Problem (Q5)](https://towardsdatascience.com/laplace-smoothing-in-naive-bayes-algorithm-9c237a8bdece/) This article walks through the math of a zero-probability crash and explicitly shows how adjusting the $\alpha$ (alpha) parameter "smooths" the data so the model doesn't fail on unseen words.
 
 ---
 
