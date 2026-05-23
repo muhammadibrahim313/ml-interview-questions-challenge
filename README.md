@@ -1359,8 +1359,17 @@ DBSCAN labels points that don't belong to any dense region as noise/outliers. K-
 </details>
 
 ### Resources
+**DBSCAN Clustering Algorithm**
+- [Master the Popular DBSCAN Clustering Algorithm](https://www.analyticsvidhya.com/blog/2020/09/how-dbscan-clustering-works/) This guide explicitly defines the parameters (epsilon and MinPts). It provides clear diagrams showing the difference between a "Core point" (cluster interior) and a "Noise point" (outlier), proving exactly why DBSCAN succeeds on weirdly shaped data where K-Means fails.
 
-> 📚 *Resources for this topic will be added here*
+  **A dendrogram (tree of merges/splits)**
+  - [Hierarchical Clustering & Dendrograms](https://www.youtube.com/watch?v=7xHsRkOdVwo) If the concept of "agglomerative merges" feels abstract, this is the best visual breakdown available. It animates exactly how individual data points are paired up into leaves, how those leaves merge into branches, and how the final dendrogram tree is constructed from the bottom up.
+
+**Silhouette Score Range and implementation**
+- [What is Silhouette Score](https://www.geeksforgeeks.org/machine-learning/what-is-silhouette-score/)
+- 
+**Difference between K-Means and DBScan Clustering**
+  - [K-Means Vs DBScan Clustering](https://www.geeksforgeeks.org/dbms/difference-between-k-means-and-dbscan-clustering/) 
 
 ---
 
