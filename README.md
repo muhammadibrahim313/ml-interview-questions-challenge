@@ -1367,7 +1367,7 @@ DBSCAN labels points that don't belong to any dense region as noise/outliers. K-
 
 **Silhouette Score Range and implementation**
 - [What is Silhouette Score](https://www.geeksforgeeks.org/machine-learning/what-is-silhouette-score/)
-- 
+  
 **Difference between K-Means and DBScan Clustering**
   - [K-Means Vs DBScan Clustering](https://www.geeksforgeeks.org/dbms/difference-between-k-means-and-dbscan-clustering/) 
 
