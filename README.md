@@ -1290,8 +1290,11 @@ K-Means assumes spherical clusters. For irregular shapes, use DBSCAN or hierarch
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
-
+- [The Complete Workflow: Iteration, Elbow Method, and Silhouette Score](https://realpython.com/k-means-clustering-python/) This is an exceptionally thorough guide. It explains the step-by-step convergence loop (Q2), provides the code to calculate and plot inertia to find the "elbow" (Q3), and explains how to use the Silhouette coefficient to double-check your $K$ value (Q1).
+- [Centroid Initialization in K-Means Clustering](https://www.kdnuggets.com/2020/06/centroid-initialization-k-means-clustering.html) This article focuses entirely on the vulnerability of the algorithm to random initialization. It breaks down the math behind the K-Means++ algorithm and explains how it forces initial centroids to be far apart to prevent poor convergence.
+- [The impact of neglecting feature scaling in k-means clustering](https://pmc.ncbi.nlm.nih.gov/articles/PMC11623793/) It explicitly details how distance-based algorithms like K-Means calculate Euclidean distance, and why leaving a feature unscaled will completely erase the impact of another feature.
+- [Demonstration of K-Means Assumptions](https://www.geeksforgeeks.org/machine-learning/demonstration-of-k-means-assumptions/)
+- [Scikit-Learn Documentation: Demonstration of K-Means Assumptions](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_assumptions.html) This specific page from the sklearn docs is famous for visually proving Q5. It applies K-Means to crescent-shaped data, elongated blobs, and varying densities, showing exactly how K-Means misclassifies them. It then recommends DBSCAN to solve those specific topological issues.
 ---
 
 ## Day 17 — Clustering Methods
