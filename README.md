@@ -1435,9 +1435,17 @@ Example: price × quantity = total_spend. Area = length × width. Interactions c
 </details>
 
 ### Resources
+**One-Hot Encoding vs. Label Encoding**
+- [Why One-Hot Encode Data in Machine Learning?](https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/) This article perfectly explains the "false ordering" problem of integer/label encoding mentioned in Q3. It breaks down why algorithms assume Green > Blue > Red and demonstrates how turning categories into 0 or 1 binary variables (Q1) fixes the mathematical constraint.
 
-> 📚 *Resources for this topic will be added here*
+**Feature Scaling: Distance Models vs. Trees**
+- [Why is Feature Scaling Important in Machine Learning](https://towardsdatascience.com/why-is-feature-scaling-important-in-machine-learning-discussing-6-feature-scaling-techniques-2773bda5be30/) This guide provides explicit algorithm breakdowns. It mathematically demonstrates why calculating Euclidean distance in KNN or SVM requires standardized scales, and dedicates a specific section proving why Random Forests and Decision Trees do not care about feature scales.
 
+**Log Transformation**
+- [Feature Transformations in Data Science](https://www.analyticsvidhya.com/blog/2021/05/feature-transformations-in-data-science-a-detailed-walkthrough/) This walkthrough features a specific, detailed section on "Log Transformation." It's explaining that it is primarily applied to right-skewed data with extreme high values to convert additive scales into multiplicative ones, thereby dragging outliers closer to the mean.
+
+**Feature interactions**
+- [Feature Interaction](https://towardsdatascience.com/feature-interactions-524815abec81/) This article explores exactly how the effect of one feature often depends on the value of another. It uses clear examples (like calculating BMI from weight and height) to show how manually engineering pairwise interactions helps simpler models capture non-linear relationships.
 ---
 
 ## Day 19 — Feature Selection
