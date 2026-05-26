@@ -1657,8 +1657,20 @@ class_weight='balanced' makes misclassifying rare cases more costly. The model l
 </details>
 
 ### Resources
+**The Accuracy Paradox & Evaluation Metrics**
+- [Tour of Evaluation Metrics for Imbalanced Classification](https://machinelearningmastery.com/tour-of-evaluation-metrics-for-imbalanced-classification/) This article explains why accuracy fails and provides a detailed breakdown of when to use Precision, Recall, F1-Score, and the ROC-AUC curve based on what kind of errors you want to avoid (False Positives vs. False Negatives).
 
-> 📚 *Resources for this topic will be added here*
+**SMOTE**
+- [SMOTE for Imbalanced Classification](https://www.analyticsvidhya.com/blog/2020/10/overcoming-class-imbalance-using-smote-techniques/) This guide perfectly explains the mechanics of SMOTE (Q2). It details how the algorithm selects a minority point, calculates the K-Nearest Neighbors, and mathematically creates a new synthetic point along the line connecting them. It also contrasts this with Undersampling (Q3), discussing the danger of losing valuable information.
+
+**Oversampling and Undersampling**
+- [handling imbalance data](https://towardsdatascience.com/oversampling-and-undersampling-explained-a-visual-guide-with-mini-2d-dataset-1155577d3091/)
+
+**Using Class Weight to Compensate for Imbalanced Data**
+- [Using Class Weight to Compensate for Imbalanced Data](https://medium.com/@bubbapora_76246/using-class-weight-to-compensate-for-imbalanced-data-6eff370185d3)
+
+**Comprehensive Strategy Guide**
+- [Credit Fraud || Dealing with Imbalanced Datasets](https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets) 
 
 ---
 
