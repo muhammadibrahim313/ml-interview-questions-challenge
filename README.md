@@ -1587,8 +1587,11 @@ XGBoost learns optimal split directions for missing values during training. No i
 </details>
 
 ### Resources
+**Handlig Missing Data**
+- [Effective Strategies for Handling Missing Values](https://www.analyticsvidhya.com/blog/2021/10/handling-missing-value/) It explains the math behind why deleting rows (listwise deletion) is only safe for very small percentages, how to apply mean/median/mode imputation, and explicitly demonstrates why extreme values (like your $10M income example) break mean imputation but leave the median intact.
 
-> 📚 *Resources for this topic will be added here*
+**XGBOOST and Missing Values**
+- [How XGBoost Handles Missing Values?](https://medium.com/@xwang222/how-xgboost-handles-missing-values-a-proof-of-concept-6aa7afcc8eb9) This article will explain how XGBoost treats missing values and demonstrate the behavior under different scenarios.
 
 ---
 
