@@ -1511,7 +1511,17 @@ Mutual information captures ANY relationship (linear or non-linear). MI=0 means 
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Filter, Wrapper, and Embedded Methods**
+- [Feature Selection For Machine Learning with implementation](https://machinelearningmastery.com/feature-selection-machine-learning-python/)
+
+**Recursive Feature Elimination Deep Dive**
+- [Scikit-Learn Official User Guide: Recursive Feature Elimination](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html) The official documentation outlines the exact mechanic: the model is trained, coefficients (or feature importances) are calculated, the weakest feature is pruned, and the process repeats until the desired number of features is reached.
+
+**L1 Regularization (Lasso) as an Embedded Method**
+- [Embedded Methods: Regularization (Lasso L1)](https://apxml.com/courses/intro-feature-engineering/chapter-6-feature-selection/embedded-lasso-l1) This article provides the mathematical intuition behind why L1 (Lasso) shrinks coefficients to zero while L2 (Ridge) only pushes them close to zero.
+
+**Mutual Information and Uncertainty**
+- [Mutual Information](https://www.kaggle.com/code/ryanholbrook/mutual-information) "Mutual information describes relationships in terms of uncertainty." It explains that while standard correlation (like Pearson) only finds linear lines, MI can detect any kind of dependency between two variables.
 
 ---
 
