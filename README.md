@@ -1814,7 +1814,17 @@ Regularization constrains model complexity, preventing it from fitting noise. On
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**L1 and L2 Regularization**
+- [Understanding l1 and l2 Regularization](https://towardsdatascience.com/understanding-l1-and-l2-regularization-93918a5ac8d0/)
+
+  **Elastic Net Regression**
+- [Elastic Net Regression](https://machinelearningmastery.com/elastic-net-regression-in-python/)
+
+  **Regularization Strength ($\lambda$) and Overfitting**
+- [How Does Ridge Regression Work?](https://www.analyticsvidhya.com/blog/2016/01/ridge-lasso-regression-python-complete-tutorial/) This comprehensive guide specifically explores what happens to the model as lambda approaches $\infty$ (forcing coefficients to zero) versus when lambda is $0$ (reducing the formula back to standard OLS regression). It perfectly backs up Q4 and Q5 by showing how tuning this single hyperparameter controls the entire bias-variance tradeoff.
+
+   **Visual Intuition of Penalties**
+- [StatQuest with Josh Starmer: Regularization Part 1 & 2](https://www.youtube.com/watch?v=Q81RR3yKn30)
 
 ---
 
