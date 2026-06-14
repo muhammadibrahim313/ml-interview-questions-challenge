@@ -1737,8 +1737,18 @@ In high dimensions, all points become roughly equidistant. KNN, clustering, and 
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**The Mechanics of PCA: Variance and Components**
+- [Principal Component Analysis (PCA): A Step-by-Step Explanation](https://builtin.com/data-science/step-step-explanation-principal-component-analysis) This article walks through the exact mathematical intuition. It explains how eigenvectors determine the "directions" of maximum variance (Q1) and how eigenvalues dictate how much variance that specific component captures, proving why the first few components hold $90\%+$ of the information (Q2).
 
+**Drawback of PCA**
+- [The Advantages and Disadvantages of PCA To Consider Before Using It](https://blog.dailydoseofds.com/p/the-advantages-and-disadvantages)
+- [Think twice before you use Principal Component Analysis in supervised learning tasks](https://medium.com/data-science/think-twice-before-you-use-principal-component-analysis-in-supervised-learning-tasks-70fbb68ebd0c)
+  
+**t-SNE for High-Dimensional Visualization**
+- [How to Use t-SNE Effectively](https://distill.pub/2016/misread-tsne/) It visually proves why the algorithm is strictly a visualization tool. It explains how the algorithm preserves "local neighborhood structure" to make clusters visible (Q4), while also warning about how it distorts global distances—which is exactly why you shouldn't use it as a preprocessing step for models.
+
+**Curse of Dimensionality**
+- [The Curse of Dimensionality in Machine Learning!](https://www.analyticsvidhya.com/blog/2021/04/the-curse-of-dimensionality-in-machine-learning/) In this article, they tackle the Curse of Dimensionality in machine learning, examining its origins and impact on algorithm performance. it also discuss practical strategies, including dimensionality reduction and feature selection, to mitigate its effects, paving the path for more effective data-driven insights.
 ---
 
 ## Day 23 — Regularization
