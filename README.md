@@ -1891,7 +1891,21 @@ Ice cream sales and drowning are correlated (both rise in summer). But ice cream
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Bayes' Theorem**
+- [Bayes Theorem for Machine Learning](https://machinelearningmastery.com/bayes-theorem-for-machine-learning/) This resource explicitly maps the mathematical terms to their names (Prior, Likelihood, Evidence, Posterior) and provides a concrete example of how to update probabilities based on new data.
+
+**Central Limit Theorem**
+- [Central Limit Theorem : Definition , Formula & Examples](https://www.analyticsvidhya.com/blog/2019/05/statistics-101-introduction-central-limit-theorem/) It explicitly demonstrates how taking repeated samples from a non-normal dataset (like a heavily skewed one) and plotting their means will eventually result in a perfect Gaussian bell curve, making it a cornerstone for hypothesis testing.
+
+**p-value**
+- [Mastering P-values in Machine Learning](https://towardsdatascience.com/mastering-p-values-in-machine-learning-bdc5bd0dd8ae/) This resource strictly defines the p-value the same way our answer does: the probability of observing data this extreme if the null hypothesis is already assumed to be true. It distinguishes between prediction (ML) and inference (Statistics), showing exactly why a p-value $< 0.05$ provides evidence to reject the null.
+
+**Standard Deviation**
+- [Fooled by Standard Deviation](https://towardsdatascience.com/fooled-by-standard-deviation-6ed52f83d591/) This article goes a step deeper than a basic definition. It explains the math behind why standard deviation is calculated by squaring the differences from the mean (variance) before taking the square root. It illustrates how a small standard deviation proves the data is clustered, while a large one means it is widely spread out or heavily influenced by outliers.
+
+**Correlation and Causation**
+- [Machine Learning Is Not Made for Causal Estimation](https://towardsdatascience.com/why-machine-learning-is-not-made-for-causal-estimation-f2add4a36e85/) This article explicitly addresses the limits of ML. It explains that ML algorithms are built for "predictive inference" (exploiting correlations), not "causal inference." It features the exact scenario we mentioned, explaining how hidden variables (confounders) create spurious correlations that can trick basic models.
+
 
 ---
 
