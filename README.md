@@ -2359,10 +2359,10 @@ ML is 80% data understanding, 20% modeling. Knowing your data, defining the righ
 **Machine Learning Pipeline**
 - [ML pipeline](https://www.ibm.com/think/topics/machine-learning-pipeline) IBM provides a comprehensive breakdown of the standard ML workflow. It explicitly details the three major stages (Data Processing, Model Development, and Model Deployment). It explains why data processing (collecting, wrangling, cleaning) must happen first, followed by model training/evaluation, and finally deployment.
 
-  **Proper validation strategy**
+**Proper validation strategy**
   - [Validation in Machine Learning](https://www.coursera.org/articles/what-is-cross-validation-in-machine-learning) This article details exactly how partitioning data properly prevents a model from memorizing noise. It walks through k-fold cross-validation step-by-step, explaining how evaluating the model across multiple validation datasets catches overfitting (when a model performs perfectly on training data but poorly on the validation folds).
 
- **Preventing Data Leakage**
+**Preventing Data Leakage**
  - [12. Common pitfalls and recommended practices](https://scikit-learn.org/stable/common_pitfalls.html)
  - [Data Leakage Tutorial](https://www.kaggle.com/code/alexisbcook/data-leakage)
 
@@ -2371,7 +2371,7 @@ ML is 80% data understanding, 20% modeling. Knowing your data, defining the righ
 
 **Rules of Machine Learning**
 - [Best Practices for ML Engineering](https://developers.google.com/machine-learning/guides/rules-of-ml) This is an industry-standard manifesto for deploying ML in the real world. It strongly backs up our answer for Q5, specifically through different directives and the emphasis on deeply understanding the data metrics and the exact problem you are trying to solve before ever spinning up a complex deep learning framework.
-- 
+ 
 ---
 
 ## 🎉 Challenge Complete!
