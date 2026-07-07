@@ -2277,7 +2277,19 @@ Target variables in classification get integer labels. Scikit-learn's LabelEncod
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Standardization & Normalization**
+- [Feature Scaling and Why is it Important](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/) This guide provides the exact mathematical formulas for both techniques. It explicitly  shows how a single extreme outlier will completely compress the rest of the data in Min-Max scaling, which is why Z-score normalization (Q1) is often preferred for algorithms like SVMs and Neural Networks.
+
+**Data Leakage**
+-  [How to Avoid Data Leakage When Performing Data Preparation][(https://machinelearningmastery.com/data-preparation-without-data-leakage/) This resource breaks down the strict protocol for the .fit() and .transform() methods. It explains exactly why you must fit the scaler on the training data only, and then use that exact same scaler to transform the test data.
+
+**Outlier detection**
+- [Outlier Detection Methods](https://www.analyticsvidhya.com/blog/2021/05/feature-engineering-how-to-detect-and-remove-outliers-with-python-code/)
+- [Outlier detection methods in Machine Learning](https://towardsdatascience.com/outlier-detection-methods-in-machine-learning-1c8b7cca6cb8/)
+  
+**Encoding Target Variables**
+- [LabelEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html) The official documentation explicitly states the best practice outlined in your answer. It notes that LabelEncoder should be used to transform non-numerical labels (as long as they are hashable and comparable) into integers ($0, 1, 2, ...$), and it strictly warns that this should be used for encoding target values (y), not the input features (X).
+- [Detailed Insights on Encoders in Machine Learning](https://code-b.dev/blog/encoders-machine-learning)
 
 ---
 
