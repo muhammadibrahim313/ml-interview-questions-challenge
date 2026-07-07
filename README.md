@@ -1972,7 +1972,11 @@ Like rolling a fair die — each outcome has equal probability. No peaks or vall
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Normal Distribution & The Empirical Rule**
+- [Normal Distribution](https://www.mathsisfun.com/data/standard-normal-distribution.html) This resource clearly breakdown the Empirical Rule (Q4). It explains exactly why approximately $95\%$ of the data falls within $2$ standard deviations and shows how changing the mean and standard deviation (Q2) mathematically stretches or shifts the bell curve without changing its fundamental properties.
+
+**Probability Distribution in Data Science**
+- [6 Types of Probability Distribution](https://www.analyticsvidhya.com/blog/2017/09/6-probability-distributions-data-science/) This is a "cheat sheet" style article. It lines up Bernoulli, Uniform, Poisson, and Normal distributions side-by-side, providing the probability mass/density functions for each and explaining exactly when to apply them based on whether your target variable is continuous, binary, or a time-based count.
 
 ---
 
