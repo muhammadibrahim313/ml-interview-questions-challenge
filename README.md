@@ -2043,7 +2043,17 @@ Mini-batch (e.g., 32 or 64 samples) balances speed and stability. Less noisy tha
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Gradient Descent**
+- [Gradient Descent Algorithm and it's Working](https://www.analyticsvidhya.com/blog/2020/10/how-does-the-gradient-descent-algorithm-work-in-machine-learning/) This guide explicitly walks through the math of calculating the slope (derivatives) to minimize the loss function (Q1). It features excellent visual diagrams showing a "ball rolling down a hill," demonstrating exactly what happens mathematically when the learning rate step is too large and bounces out of the valley (Q3), versus finding the optimal step size (Q2).
+  
+**Impact of Learning Rate**
+- [Understand the Impact of Learning Rate](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
+
+**Batch, Mini Batch & Stochastic Gradient Descent**
+- [SGD vs. Mini-Batch vs. Full Batch](https://medium.com/data-science/batch-mini-batch-stochastic-gradient-descent-7a62ecba642a)
+
+**Batch Gradient Descent VS Stochastic Gradient Descent**
+- [Difference between Batch Gradient Descent and Stochastic Gradient Descent](https://www.geeksforgeeks.org/machine-learning/difference-between-batch-gradient-descent-and-stochastic-gradient-descent/)
 
 ---
 
