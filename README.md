@@ -2120,7 +2120,17 @@ n_estimators, max_depth, min_samples_split are hyperparameters you set. Split th
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Parameters vs. Hyperparameters**
+- [Difference Between a Parameter and a Hyperparameter](https://machinelearningmastery.com/difference-between-a-parameter-and-a-hyperparameter/)
+
+**A Comprehensive Guide on Hyperparameter Tuning**
+- [A Comprehensive Guide on Hyperparameter Tuning and its Techniques](https://www.analyticsvidhya.com/blog/2022/02/a-comprehensive-guide-on-hyperparameter-tuning-and-its-techniques/) This guide provides a direct comparison between the two methods. It explains the exact math of Grid Search combinations (Q2) and details why Random Search is statistically proven to find optimal models faster when certain hyperparameters matter more than others (Q3).
+
+**Test and Validation sets**
+- [What is the Difference Between Test and Validation Datasets](https://machinelearningmastery.com/difference-test-validation-datasets/) This article addresses the widespread confusion between these two splits. It clearly outlines the standard ML pipeline workflow: Train (to learn parameters) $\rightarrow$ Validate (to tune hyperparameters) $\rightarrow$ Test (for unbiased final evaluation). It explains exactly why using the test set for tuning ruins the integrity of your final metric.
+
+**Hyperparameter Tuning example**
+- [Hyperparameter Tuning the Random Forest in Python](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74/) It walks through building a hyperparameter grid specifically for a Random Forest model (tying into Q5) and implements a RandomizedSearchCV to show exactly why it explores the space more efficiently than a standard Grid Search.
 
 ---
 
