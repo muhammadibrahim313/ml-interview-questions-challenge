@@ -2197,7 +2197,20 @@ A/B testing shows model A to half of users, model B to the other half. Measures 
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**The Philosophy of ML: No Free Lunch & Occam’s Razor**
+- [A Gentle Introduction to the No Free Lunch Theorem](https://machinelearningmastery.com/no-free-lunch-theorem-for-machine-learning/) it explains exactly why our answer states "always try multiple approaches and compare"—because without looking at the specific data, a neural network is mathematically no better than a basic decision tree.
+- [Ensemble Learning Algorithm Complexity and Occam’s Razor](https://machinelearningmastery.com/ensemble-learning-and-occams-razor/)
+
+**baseline Model**
+- [How To Get Baseline Results And Why They Matter](https://machinelearningmastery.com/how-to-get-baseline-results-and-why-they-matter/) This guide explains how to generate the baselines(mean prediction for regression, majority class for classification) so you can prove your "fancy model" is actually learning.
+
+**Model Drift**
+- [Why You Should Care About Data and Concept Drift](https://www.evidentlyai.com/blog/machine-learning-monitoring-data-and-concept-drift) This comprehensive guide distinguishes between "Concept Drift" (the meaning of the target variable changes) and "Data Drift" (the input features change). It reinforces our key point: models don't break like traditional software; they decay, meaning you must actively monitor and retrain them.
+
+**A/B testing**
+- [A/B Testing Machine Learning Models](https://mlinproduction.com/ab-test-ml-models-deployment-series-08/)
+- [The What, Why, and How of A/B Testing in Machine Learning](https://mlops.community/blog/the-what-why-and-how-of-a-b-testing-in-ml)
+- These article bridges the gap between data science and product management. It explains how to route half of your live users to Model A (the control) and the other half to Model B (the challenger) to measure the exact "actual business impact" mentioned in your answer key.
 
 ---
 
