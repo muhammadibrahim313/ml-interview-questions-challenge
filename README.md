@@ -522,7 +522,33 @@ Logistic regression creates a linear decision boundary. For non-linear boundarie
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+
+  * **Logistic Regression Overview (MCQ 1 & 2)**
+
+      * [Google ML Crash Course: Logistic Regression](https://developers.google.com/machine-learning/crash-course/logistic-regression/calculating-a-probability) – Interactive module explaining why logistic regression is for classification and how it calculates probability.
+      * [Scikit-Learn: Logistic Regression Guide](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) – The industry-standard technical documentation for implementation and logic.
+
+  * **The Sigmoid Function (MCQ 3)**
+
+      * [Desmos Interactive Graph: Sigmoid](https://www.desmos.com/calculator/coknirwubg) – A live tool where you can adjust variables to see how the S-curve squashes values into the (0, 1) range.
+      * [Wolfram MathWorld: Sigmoid Function](https://mathworld.wolfram.com/SigmoidFunction.html) – Concise mathematical definition and properties of the sigmoid.
+
+  * **Binary Cross-Entropy / Log Loss (MCQ 4)**
+
+      * [ML-Cheatsheet: Logistic Regression Loss](https://www.datacamp.com/tutorial/loss-function-in-machine-learning) – A clean, visual breakdown of the math behind Log Loss and how it penalizes errors.
+      * [Neptune.ai: Binary Cross Entropy Explained](https://towardsdatascience.com/cross-entropy-negative-log-likelihood-and-all-that-jazz-47a95bd2e81/) – Deep dive into why we use Log Loss instead of MSE for classification.
+
+  * **Decision Boundaries (MCQ 5)**
+
+      * [TensorFlow Playground](https://playground.tensorflow.org/) – Set "Problem Type" to Classification and "Activation" to Sigmoid to interactively see the linear decision boundary in action.
+      * [Visualizing Decision Boundaries](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html) – Comparison plots showing the linear nature of Logistic Regression versus non-linear classifiers.
+
+| Concept | Key Property | Mathematical Intuition |
+| :--- | :--- | :--- |
+| **Output** | Probability | Value between 0 and 1 |
+| **Activation** | Sigmoid | $\sigma(z) = \frac{1}{1 + e^{-z}}$ |
+| **Loss** | Log Loss | Penalizes confident wrong answers |
+| **Boundary** | Linear | A straight line or flat plane |
 
 ---
 
@@ -589,7 +615,25 @@ If 95% aren't spam and the model always says "not spam," it's correct 95% of the
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+### 🔹 Core Concepts (MCQ 1–3)
+* [Google ML Crash Course – Classification Metrics](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall)
+  Clear explanations of confusion matrix, precision, and recall with simple visuals.
+* [StatQuest with Josh Starmer – Confusion Matrix](https://www.youtube.com/watch?v=Kdsp6soqA7o)
+  Short and visual explanation of TP, FP, TN, FN.
+
+### 🔹 Precision vs Recall (MCQ 2–4)
+* [StatQuest with Josh Starmer – Precision & Recall](https://www.youtube.com/watch?v=vP06aMoz4v8)
+  Intuition behind precision vs recall and when each matters.
+* [Machine Learning Mastery – Precision vs Recall Guide](https://machinelearningmastery.com/precision-recall-and-f-measure-for-imbalanced-classification/)
+  Good practical examples, especially for imbalanced data.
+
+### 🔹 Accuracy Pitfall (MCQ 5)
+* [Kaggle – Classification Metrics](https://www.kaggle.com/code/alexisbcook/classification-metrics)
+  Shows why high accuracy can be misleading.
+
+### 🔹 Optional Visualization
+* [TensorFlow Playground](https://playground.tensorflow.org/)
+  Visualize classification behavior and model errors interactively.
 
 ---
 
@@ -656,9 +700,29 @@ AUC=1.0 means the model can perfectly rank all positives above all negatives. On
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**F1 Score Harmonic Mean of Precision & Recall (MCQ 1 & 4)**
 
----
+- [Why F1 uses Harmonic Mean, not Arithmetic Mean — Medium](https://medium.com/@Suraj_Yadav/why-is-the-f1-score-the-harmonic-mean-of-precision-and-recall-rather-than-the-arithmetic-mean-2573ab99e49c) 
+
+- [F1 Score in Machine Learning — Encord](https://encord.com/blog/f1-score-in-machine-learning/) 
+
+- [Scikit-Learn: F1 Score Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html) 
+
+**ROC Curve — TPR vs FPR (MCQ 3)**
+
+- [StatQuest: ROC and AUC, Clearly Explained!  YouTube](https://www.youtube.com/watch?v=4jRBRDbJemM) 
+
+- [MLU-Explain: ROC and AUC — Interactive](https://mlu-explain.github.io/roc-auc/)
+
+- [Google ML Crash Course: ROC and AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) 
+
+**AUC Interpretation — 0.5, 1.0, and What They Mean (MCQ 2 & 5)**
+
+- [DataSchool: ROC Curves and AUC Explained (Video + Transcript)](https://www.dataschool.io/roc-curves-and-auc-explained/) 
+
+- [Evidently AI: How to Explain ROC AUC](https://www.evidentlyai.com/classification-metrics/explain-roc-curve)
+
+- [DataCamp: AUC and ROC Curve Tutorial](https://www.datacamp.com/tutorial/auc) 
 
 ## Day 09 — Multi-class Metrics
 
@@ -723,9 +787,34 @@ Micro pools all predictions across classes: total TP / (total TP + total FP). Th
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Macro vs Micro Averaging — F1 in Multi-class (MCQ 1 & 5)**
 
----
+- [Micro, Macro & Weighted Averages of F1 Score — Towards Data Science](https://towardsdatascience.com/micro-macro-weighted-averages-of-f1-score-clearly-explained-b603420b292f/)
+
+- [Scikit-Learn: F1 Score Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html)
+
+- [Understanding Macro F1 Score  Medium](https://medium.com/@sushma.mullamuri420/understanding-the-macro-f1-score-in-multi-class-classification-21ca00c200da)
+
+**Cohen's Kappa — Agreement Beyond Chance (MCQ 2)**
+
+- [Cohen's Kappa Explained  Built In](https://builtin.com/data-science/cohens-kappa)
+
+- [Cohen's Kappa and Its Use in ML  Explained](https://mlexplained.blog/2024/01/08/cohens-kappa-and-its-use-in-ml/)
+
+- [Cohen's Kappa: What It Is, When to Use It  The New Stack](https://thenewstack.io/cohens-kappa-what-it-is-when-to-use-it-and-how-to-avoid-its-pitfalls/)
+
+**Log Loss — Penalizing Confident Wrong Predictions (MCQ 3)**
+
+- [Understanding Binary Cross-Entropy / Log Loss  Towards Data Science](https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a/)
+
+- [A Gentle Introduction to Cross-Entropy  Machine Learning Mastery](https://machinelearningmastery.com/cross-entropy-for-machine-learning/)
+
+**Specificity / True Negative Rate (MCQ 4)**
+
+- [Sensitivity and Specificity - Wikipedia](https://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+
+- [Specificity - GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/what-is-specificity/)
+
 
 ## Day 10 — Decision Trees
 
@@ -790,7 +879,14 @@ Trees handle categoricals natively (a is false), don't need scaling (b is false)
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Gini Impurity & Information Gain**
+- [Decision Trees Explained](https://towardsdatascience.com/decision-trees-explained-entropy-information-gain-gini-index-ccp-pruning-4d78070db36c/) This article walks through the exact manual calculations for a split. It breaks down the formula for Gini Impurity: $Gini = 1 - \sum_{i=1}^{c} (p_i)^2$. It explicitly proves our answer for Q2 by showing that a perfectly pure node equals $0$, while an evenly split node (50/50) maxes out at $0.5$. It also shows how the algorithm subtracts this impurity from the parent node to calculate "Information Gain" (Q1).
+
+**Overfitting Problem & Pruning**
+- [Tree Based Algorithms](https://www.analyticsvidhya.com/blog/2016/04/tree-based-algorithms-complete-tutorial-scratch-in-python/) This comprehensive guide devotes an entire section to the exact problem described in Q3. It explains why an unconstrained tree captures noise rather than patterns. It then covers the solutions (Q4), explaining the difference between pre-pruning (setting hyperparameters like max_depth before training) and post-pruning (letting the tree grow completely and then mathematically trimming the useless branches).
+
+**Model Properties & Advantages**
+- [Decision Trees](https://scikit-learn.org/stable/modules/tree.html) The official documentation explicitly lists the advantages and disadvantages. It specifically confirms that "Trees require little data preparation. Other techniques often require data normalization" (proving scaling isn't needed) while also explicitly stating as its first disadvantage: "Decision-tree learners can create over-complex trees that do not generalize the data well. This is called overfitting."
 
 ---
 
@@ -857,7 +953,17 @@ More trees means more stable predictions. After 100-500 trees, diminishing retur
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Mechanics of Bagging & Randomness**
+- [Bagging and Random Forest](https://machinelearningmastery.com/bagging-and-random-forest-for-imbalanced-classification/) This breaks down the exact difference between standard Bootstrap Aggregation (Q1) and the Random Forest extension (Q2). It explains the underlying math of sampling with replacement, showing how forcing individual trees to train on restricted, randomized subsets decorrelates the models, preventing them from making the exact same structural splits.
+
+**variance and better generalization**
+- [Random Forests and the Bias-Variance](https://medium.com/data-science/random-forests-and-the-bias-variance-tradeoff-3b77fee339b4)
+
+**Out-of-Bag (OOB) Evaluation**
+- [Out of Bag (OOB) score in Random Forest](https://medium.com/data-science/what-is-out-of-bag-oob-score-in-random-forest-a7fa23d710) This article provides the statistical proof for our explanation. Because bootstrap samples are drawn with replacement, the probability of a specific row not being picked in a given sample approaches $1/e$, meaning roughly 37% of the data is left out of any individual tree's training set. This article walks through exactly how to pass those "left out" rows back through the specific trees that haven't seen them to calculate an unbiased error estimate.
+
+**Increasing number of trees in Random Forest**
+- [OOB Errors for Random Forests](https://scikit-learn.org/stable/auto_examples/ensemble/plot_ensemble_oob.html) This is the official code snippet designed to prove this exact concept. It plots the Out-of-Bag error rate against the n_estimators hyperparameter. The graph explicitly shows the diminishing returns as the number of trees increases.
 
 ---
 
@@ -924,7 +1030,17 @@ XGBoost adds L1/L2 regularization on leaf weights, uses approximate split-findin
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Bagging vs Boosting**
+- [Bagging vs Boosting in Machine Learning](https://www.geeksforgeeks.org/machine-learning/bagging-vs-boosting-in-machine-learning/)
+
+**AdaBoost**
+- [AdaBoost : A Brief Introduction](https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/) This article walks through the exact mathematical steps too. It shows the formula for calculating the "Amount of Say" (Alpha) and demonstrates how misclassified samples have their weights mathematically increased so the next sequential stump is forced to focus on them.
+
+**Gradient Boosting**
+- [Gradient Boosting Algorithm](https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/)
+
+**The XGBoost Upgrades**
+- [Introduction to Boosted Trees](https://xgboost.readthedocs.io/en/stable/tutorials/model.html) The official documentation explicitly outlines the exact upgrades mentioned in our answer key. It shows the mathematical objective function that includes $L_1$ and $L_2$ regularization on the leaf weights, and it explains the approximate split-finding algorithm that allows it to build trees much faster than standard Gradient Boosting.
 
 ---
 
@@ -991,7 +1107,14 @@ High C = narrow margin, fewer training errors (overfitting risk). Low C = wider 
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Margins, Hyperplanes, and Support Vectors**
+- [Everything one should know about — Support Vector Machines (SVM)](https://medium.com/analytics-vidhya/everything-one-should-know-about-support-vector-machines-svm-18e6d3f96f49) This guide explicitly defines both terms using the same logic as in our answer key. It explains that the algorithm's primary goal is finding the decision boundary with the maximum width (the margin), and specifically confirms that removing or moving the "Support Vectors" on the edge of that margin is the only thing that alters the hyperplane.
+
+**The Kernel Trick**
+- [Kernel Density Estimation](https://towardsdatascience.com/kernel-density-estimation-explained-step-by-step-7cc5b5bc4517/) This is a deep dive into the specific mathematical "sorcery" mentioned in Q3. It proves exactly how the kernel function acts as a modified dot product, representing pairwise similarity comparisons in a higher-dimensional space without explicitly applying the transformations, saving massive amounts of computation.
+
+**Kernels and The C Parameter**
+- [The C Parameter in Support Vector Machines](https://www.baeldung.com/cs/ml-svm-c-parameter) This computer science guide is entirely dedicated to the exact tradeoff described in Q5. It explicitly details how a "Small C Value" allows for a large/wider margin with more training errors (better generalization), while a "Large C Value" forces a narrow margin to perfectly classify training points, severely increasing the risk of overfitting.
 
 ---
 
@@ -1058,7 +1181,18 @@ With K=1, each point's nearest neighbor is itself. So training error = 0 always.
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Lazy learning**
+- [Why K-Nearest Neighbors (KNN) is called a Lazy Learner](https://www.geeksforgeeks.org/machine-learning/why-is-knn-a-lazy-learner/) This guide explicitly addresses Q1. It defines the technically "Lazy" (instance-based) algorithms, explaining that KNN has no true training phase and defers all the heavy computational math until the exact moment a prediction is requested.
+
+**K-Nearest Neighbors Algorithm Deep study**
+- [What is K Nearest Neighbors?](https://www.youtube.com/watch?v=abnL_GUGub4)
+- [Guide to K-Nearest Neighbors Algorithm in Machine Learning](https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm-clustering/)
+
+**Distance Measures for Machine Learning**
+- [4 Distance Measures for Machine Learning](https://machinelearningmastery.com/distance-measures-for-machine-learning/) it breaks down the exact math behind Euclidean (straight-line), Manhattan (grid-like), and Minkowski distances. ie provides the Python code for each and explains exactly when to use which metric based on the dimensionality of your data (Q5).
+
+**Why, How and When to Scale your Features**
+- [All about Feature Scaling](https://towardsdatascience.com/all-about-feature-scaling-bcc0ad75cb35/)
 
 ---
 
@@ -1125,7 +1259,16 @@ Since NB multiplies probabilities, one zero kills everything. Fix: Laplace smoot
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+-  [Naive Bayes Classifier Explained: Assumptions, Types, and Uses](https://medium.com/@kavyasrirelangi100/naive-bayes-classifier-explained-assumptions-types-and-uses-bef767a758a3)
+
+- [Naive Bayes Classifier Explained With Practical Problems](https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/)
+  To understand why assuming features are independent is considered "naive," and why it works so well for high-dimensional text data like spam detection. 
+
+- [Bayes' Theorem Components: The Prior (Q3)](https://www.mathsisfun.com/data/bayes-theorem.html) this page offers one of the clearest mathematical breakdowns of the Prior, Posterior, and Evidence using real-world examples like fire and smoke.
+
+- [Gaussian Distribution (Q4)](https://scikit-learn.org/stable/modules/naive_bayes.html) When working with continuous data (like real-valued measurements) instead of word counts, the model assumes a "Normal" or Gaussian distribution.
+
+- [The "Zero Frequency" Problem (Q5)](https://towardsdatascience.com/laplace-smoothing-in-naive-bayes-algorithm-9c237a8bdece/) This article walks through the math of a zero-probability crash and explicitly shows how adjusting the $\alpha$ (alpha) parameter "smooths" the data so the model doesn't fail on unseen words.
 
 ---
 
@@ -1192,8 +1335,11 @@ K-Means assumes spherical clusters. For irregular shapes, use DBSCAN or hierarch
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
-
+- [The Complete Workflow: Iteration, Elbow Method, and Silhouette Score](https://realpython.com/k-means-clustering-python/) This is an exceptionally thorough guide. It explains the step-by-step convergence loop (Q2), provides the code to calculate and plot inertia to find the "elbow" (Q3), and explains how to use the Silhouette coefficient to double-check your $K$ value (Q1).
+- [Centroid Initialization in K-Means Clustering](https://www.kdnuggets.com/2020/06/centroid-initialization-k-means-clustering.html) This article focuses entirely on the vulnerability of the algorithm to random initialization. It breaks down the math behind the K-Means++ algorithm and explains how it forces initial centroids to be far apart to prevent poor convergence.
+- [The impact of neglecting feature scaling in k-means clustering](https://pmc.ncbi.nlm.nih.gov/articles/PMC11623793/) It explicitly details how distance-based algorithms like K-Means calculate Euclidean distance, and why leaving a feature unscaled will completely erase the impact of another feature.
+- [Demonstration of K-Means Assumptions](https://www.geeksforgeeks.org/machine-learning/demonstration-of-k-means-assumptions/)
+- [Scikit-Learn Documentation: Demonstration of K-Means Assumptions](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_assumptions.html) This specific page from the sklearn docs is famous for visually proving Q5. It applies K-Means to crescent-shaped data, elongated blobs, and varying densities, showing exactly how K-Means misclassifies them. It then recommends DBSCAN to solve those specific topological issues.
 ---
 
 ## Day 17 — Clustering Methods
@@ -1258,8 +1404,17 @@ DBSCAN labels points that don't belong to any dense region as noise/outliers. K-
 </details>
 
 ### Resources
+**DBSCAN Clustering Algorithm**
+- [Master the Popular DBSCAN Clustering Algorithm](https://www.analyticsvidhya.com/blog/2020/09/how-dbscan-clustering-works/) This guide explicitly defines the parameters (epsilon and MinPts). It provides clear diagrams showing the difference between a "Core point" (cluster interior) and a "Noise point" (outlier), proving exactly why DBSCAN succeeds on weirdly shaped data where K-Means fails.
 
-> 📚 *Resources for this topic will be added here*
+**A dendrogram (tree of merges/splits)**
+- [Hierarchical Clustering & Dendrograms](https://www.youtube.com/watch?v=7xHsRkOdVwo) If the concept of "agglomerative merges" feels abstract, this is the best visual breakdown available. It animates exactly how individual data points are paired up into leaves, how those leaves merge into branches, and how the final dendrogram tree is constructed from the bottom up.
+
+**Silhouette Score Range and implementation**
+- [What is Silhouette Score](https://www.geeksforgeeks.org/machine-learning/what-is-silhouette-score/)
+  
+**Difference between K-Means and DBScan Clustering**
+- [K-Means Vs DBScan Clustering](https://www.geeksforgeeks.org/dbms/difference-between-k-means-and-dbscan-clustering/) 
 
 ---
 
@@ -1325,9 +1480,17 @@ Example: price × quantity = total_spend. Area = length × width. Interactions c
 </details>
 
 ### Resources
+**One-Hot Encoding vs. Label Encoding**
+- [Why One-Hot Encode Data in Machine Learning?](https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/) This article perfectly explains the "false ordering" problem of integer/label encoding mentioned in Q3. It breaks down why algorithms assume Green > Blue > Red and demonstrates how turning categories into 0 or 1 binary variables (Q1) fixes the mathematical constraint.
 
-> 📚 *Resources for this topic will be added here*
+**Feature Scaling: Distance Models vs. Trees**
+- [Why is Feature Scaling Important in Machine Learning](https://towardsdatascience.com/why-is-feature-scaling-important-in-machine-learning-discussing-6-feature-scaling-techniques-2773bda5be30/) This guide provides explicit algorithm breakdowns. It mathematically demonstrates why calculating Euclidean distance in KNN or SVM requires standardized scales, and dedicates a specific section proving why Random Forests and Decision Trees do not care about feature scales.
 
+**Log Transformation**
+- [Feature Transformations in Data Science](https://www.analyticsvidhya.com/blog/2021/05/feature-transformations-in-data-science-a-detailed-walkthrough/) This walkthrough features a specific, detailed section on "Log Transformation." It's explaining that it is primarily applied to right-skewed data with extreme high values to convert additive scales into multiplicative ones, thereby dragging outliers closer to the mean.
+
+**Feature interactions**
+- [Feature Interaction](https://towardsdatascience.com/feature-interactions-524815abec81/) This article explores exactly how the effect of one feature often depends on the value of another. It uses clear examples (like calculating BMI from weight and height) to show how manually engineering pairwise interactions helps simpler models capture non-linear relationships.
 ---
 
 ## Day 19 — Feature Selection
@@ -1393,7 +1556,17 @@ Mutual information captures ANY relationship (linear or non-linear). MI=0 means 
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Filter, Wrapper, and Embedded Methods**
+- [Feature Selection For Machine Learning with implementation](https://machinelearningmastery.com/feature-selection-machine-learning-python/)
+
+**Recursive Feature Elimination Deep Dive**
+- [Scikit-Learn Official User Guide: Recursive Feature Elimination](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html) The official documentation outlines the exact mechanic: the model is trained, coefficients (or feature importances) are calculated, the weakest feature is pruned, and the process repeats until the desired number of features is reached.
+
+**L1 Regularization (Lasso) as an Embedded Method**
+- [Embedded Methods: Regularization (Lasso L1)](https://apxml.com/courses/intro-feature-engineering/chapter-6-feature-selection/embedded-lasso-l1) This article provides the mathematical intuition behind why L1 (Lasso) shrinks coefficients to zero while L2 (Ridge) only pushes them close to zero.
+
+**Mutual Information and Uncertainty**
+- [Mutual Information](https://www.kaggle.com/code/ryanholbrook/mutual-information) "Mutual information describes relationships in terms of uncertainty." It explains that while standard correlation (like Pearson) only finds linear lines, MI can detect any kind of dependency between two variables.
 
 ---
 
@@ -1459,8 +1632,11 @@ XGBoost learns optimal split directions for missing values during training. No i
 </details>
 
 ### Resources
+**Handlig Missing Data**
+- [Effective Strategies for Handling Missing Values](https://www.analyticsvidhya.com/blog/2021/10/handling-missing-value/) It explains the math behind why deleting rows (listwise deletion) is only safe for very small percentages, how to apply mean/median/mode imputation, and explicitly demonstrates why extreme values (like your $10M income example) break mean imputation but leave the median intact.
 
-> 📚 *Resources for this topic will be added here*
+**XGBOOST and Missing Values**
+- [How XGBoost Handles Missing Values?](https://medium.com/@xwang222/how-xgboost-handles-missing-values-a-proof-of-concept-6aa7afcc8eb9) This article will explain how XGBoost treats missing values and demonstrate the behavior under different scenarios.
 
 ---
 
@@ -1526,8 +1702,20 @@ class_weight='balanced' makes misclassifying rare cases more costly. The model l
 </details>
 
 ### Resources
+**The Accuracy Paradox & Evaluation Metrics**
+- [Tour of Evaluation Metrics for Imbalanced Classification](https://machinelearningmastery.com/tour-of-evaluation-metrics-for-imbalanced-classification/) This article explains why accuracy fails and provides a detailed breakdown of when to use Precision, Recall, F1-Score, and the ROC-AUC curve based on what kind of errors you want to avoid (False Positives vs. False Negatives).
 
-> 📚 *Resources for this topic will be added here*
+**SMOTE**
+- [SMOTE for Imbalanced Classification](https://www.analyticsvidhya.com/blog/2020/10/overcoming-class-imbalance-using-smote-techniques/) This guide perfectly explains the mechanics of SMOTE (Q2). It details how the algorithm selects a minority point, calculates the K-Nearest Neighbors, and mathematically creates a new synthetic point along the line connecting them. It also contrasts this with Undersampling (Q3), discussing the danger of losing valuable information.
+
+**Oversampling and Undersampling**
+- [handling imbalance data](https://towardsdatascience.com/oversampling-and-undersampling-explained-a-visual-guide-with-mini-2d-dataset-1155577d3091/)
+
+**Using Class Weight to Compensate for Imbalanced Data**
+- [Using Class Weight to Compensate for Imbalanced Data](https://medium.com/@bubbapora_76246/using-class-weight-to-compensate-for-imbalanced-data-6eff370185d3)
+
+**Comprehensive Strategy Guide**
+- [Credit Fraud || Dealing with Imbalanced Datasets](https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets) 
 
 ---
 
@@ -1594,8 +1782,18 @@ In high dimensions, all points become roughly equidistant. KNN, clustering, and 
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**The Mechanics of PCA: Variance and Components**
+- [Principal Component Analysis (PCA): A Step-by-Step Explanation](https://builtin.com/data-science/step-step-explanation-principal-component-analysis) This article walks through the exact mathematical intuition. It explains how eigenvectors determine the "directions" of maximum variance (Q1) and how eigenvalues dictate how much variance that specific component captures, proving why the first few components hold $90\%+$ of the information (Q2).
 
+**Drawback of PCA**
+- [The Advantages and Disadvantages of PCA To Consider Before Using It](https://blog.dailydoseofds.com/p/the-advantages-and-disadvantages)
+- [Think twice before you use Principal Component Analysis in supervised learning tasks](https://medium.com/data-science/think-twice-before-you-use-principal-component-analysis-in-supervised-learning-tasks-70fbb68ebd0c)
+  
+**t-SNE for High-Dimensional Visualization**
+- [How to Use t-SNE Effectively](https://distill.pub/2016/misread-tsne/) It visually proves why the algorithm is strictly a visualization tool. It explains how the algorithm preserves "local neighborhood structure" to make clusters visible (Q4), while also warning about how it distorts global distances—which is exactly why you shouldn't use it as a preprocessing step for models.
+
+**Curse of Dimensionality**
+- [The Curse of Dimensionality in Machine Learning!](https://www.analyticsvidhya.com/blog/2021/04/the-curse-of-dimensionality-in-machine-learning/) In this article, they tackle the Curse of Dimensionality in machine learning, examining its origins and impact on algorithm performance. it also discuss practical strategies, including dimensionality reduction and feature selection, to mitigate its effects, paving the path for more effective data-driven insights.
 ---
 
 ## Day 23 — Regularization
@@ -1661,7 +1859,17 @@ Regularization constrains model complexity, preventing it from fitting noise. On
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**L1 and L2 Regularization**
+- [Understanding l1 and l2 Regularization](https://towardsdatascience.com/understanding-l1-and-l2-regularization-93918a5ac8d0/)
+
+  **Elastic Net Regression**
+- [Elastic Net Regression](https://machinelearningmastery.com/elastic-net-regression-in-python/)
+
+  **Regularization Strength ($\lambda$) and Overfitting**
+- [How Does Ridge Regression Work?](https://www.analyticsvidhya.com/blog/2016/01/ridge-lasso-regression-python-complete-tutorial/) This comprehensive guide specifically explores what happens to the model as lambda approaches $\infty$ (forcing coefficients to zero) versus when lambda is $0$ (reducing the formula back to standard OLS regression). It perfectly backs up Q4 and Q5 by showing how tuning this single hyperparameter controls the entire bias-variance tradeoff.
+
+   **Visual Intuition of Penalties**
+- [StatQuest with Josh Starmer: Regularization Part 1 & 2](https://www.youtube.com/watch?v=Q81RR3yKn30)
 
 ---
 
@@ -1728,7 +1936,21 @@ Ice cream sales and drowning are correlated (both rise in summer). But ice cream
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Bayes' Theorem**
+- [Bayes Theorem for Machine Learning](https://machinelearningmastery.com/bayes-theorem-for-machine-learning/) This resource explicitly maps the mathematical terms to their names (Prior, Likelihood, Evidence, Posterior) and provides a concrete example of how to update probabilities based on new data.
+
+**Central Limit Theorem**
+- [Central Limit Theorem : Definition , Formula & Examples](https://www.analyticsvidhya.com/blog/2019/05/statistics-101-introduction-central-limit-theorem/) It explicitly demonstrates how taking repeated samples from a non-normal dataset (like a heavily skewed one) and plotting their means will eventually result in a perfect Gaussian bell curve, making it a cornerstone for hypothesis testing.
+
+**p-value**
+- [Mastering P-values in Machine Learning](https://towardsdatascience.com/mastering-p-values-in-machine-learning-bdc5bd0dd8ae/) This resource strictly defines the p-value the same way our answer does: the probability of observing data this extreme if the null hypothesis is already assumed to be true. It distinguishes between prediction (ML) and inference (Statistics), showing exactly why a p-value $< 0.05$ provides evidence to reject the null.
+
+**Standard Deviation**
+- [Fooled by Standard Deviation](https://towardsdatascience.com/fooled-by-standard-deviation-6ed52f83d591/) This article goes a step deeper than a basic definition. It explains the math behind why standard deviation is calculated by squaring the differences from the mean (variance) before taking the square root. It illustrates how a small standard deviation proves the data is clustered, while a large one means it is widely spread out or heavily influenced by outliers.
+
+**Correlation and Causation**
+- [Machine Learning Is Not Made for Causal Estimation](https://towardsdatascience.com/why-machine-learning-is-not-made-for-causal-estimation-f2add4a36e85/) This article explicitly addresses the limits of ML. It explains that ML algorithms are built for "predictive inference" (exploiting correlations), not "causal inference." It features the exact scenario we mentioned, explaining how hidden variables (confounders) create spurious correlations that can trick basic models.
+
 
 ---
 
@@ -1795,7 +2017,11 @@ Like rolling a fair die — each outcome has equal probability. No peaks or vall
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Normal Distribution & The Empirical Rule**
+- [Normal Distribution](https://www.mathsisfun.com/data/standard-normal-distribution.html) This resource clearly breakdown the Empirical Rule (Q4). It explains exactly why approximately $95\%$ of the data falls within $2$ standard deviations and shows how changing the mean and standard deviation (Q2) mathematically stretches or shifts the bell curve without changing its fundamental properties.
+
+**Probability Distribution in Data Science**
+- [6 Types of Probability Distribution](https://www.analyticsvidhya.com/blog/2017/09/6-probability-distributions-data-science/) This is a "cheat sheet" style article. It lines up Bernoulli, Uniform, Poisson, and Normal distributions side-by-side, providing the probability mass/density functions for each and explaining exactly when to apply them based on whether your target variable is continuous, binary, or a time-based count.
 
 ---
 
@@ -1862,7 +2088,17 @@ Mini-batch (e.g., 32 or 64 samples) balances speed and stability. Less noisy tha
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Gradient Descent**
+- [Gradient Descent Algorithm and it's Working](https://www.analyticsvidhya.com/blog/2020/10/how-does-the-gradient-descent-algorithm-work-in-machine-learning/) This guide explicitly walks through the math of calculating the slope (derivatives) to minimize the loss function (Q1). It features excellent visual diagrams showing a "ball rolling down a hill," demonstrating exactly what happens mathematically when the learning rate step is too large and bounces out of the valley (Q3), versus finding the optimal step size (Q2).
+  
+**Impact of Learning Rate**
+- [Understand the Impact of Learning Rate](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
+
+**Batch, Mini Batch & Stochastic Gradient Descent**
+- [SGD vs. Mini-Batch vs. Full Batch](https://medium.com/data-science/batch-mini-batch-stochastic-gradient-descent-7a62ecba642a)
+
+**Batch Gradient Descent VS Stochastic Gradient Descent**
+- [Difference between Batch Gradient Descent and Stochastic Gradient Descent](https://www.geeksforgeeks.org/machine-learning/difference-between-batch-gradient-descent-and-stochastic-gradient-descent/)
 
 ---
 
@@ -1929,7 +2165,17 @@ n_estimators, max_depth, min_samples_split are hyperparameters you set. Split th
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Parameters vs. Hyperparameters**
+- [Difference Between a Parameter and a Hyperparameter](https://machinelearningmastery.com/difference-between-a-parameter-and-a-hyperparameter/)
+
+**A Comprehensive Guide on Hyperparameter Tuning**
+- [A Comprehensive Guide on Hyperparameter Tuning and its Techniques](https://www.analyticsvidhya.com/blog/2022/02/a-comprehensive-guide-on-hyperparameter-tuning-and-its-techniques/) This guide provides a direct comparison between the two methods. It explains the exact math of Grid Search combinations (Q2) and details why Random Search is statistically proven to find optimal models faster when certain hyperparameters matter more than others (Q3).
+
+**Test and Validation sets**
+- [What is the Difference Between Test and Validation Datasets](https://machinelearningmastery.com/difference-test-validation-datasets/) This article addresses the widespread confusion between these two splits. It clearly outlines the standard ML pipeline workflow: Train (to learn parameters) $\rightarrow$ Validate (to tune hyperparameters) $\rightarrow$ Test (for unbiased final evaluation). It explains exactly why using the test set for tuning ruins the integrity of your final metric.
+
+**Hyperparameter Tuning example**
+- [Hyperparameter Tuning the Random Forest in Python](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74/) It walks through building a hyperparameter grid specifically for a Random Forest model (tying into Q5) and implements a RandomizedSearchCV to show exactly why it explores the space more efficiently than a standard Grid Search.
 
 ---
 
@@ -1996,7 +2242,20 @@ A/B testing shows model A to half of users, model B to the other half. Measures 
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**The Philosophy of ML: No Free Lunch & Occam’s Razor**
+- [A Gentle Introduction to the No Free Lunch Theorem](https://machinelearningmastery.com/no-free-lunch-theorem-for-machine-learning/) it explains exactly why our answer states "always try multiple approaches and compare"—because without looking at the specific data, a neural network is mathematically no better than a basic decision tree.
+- [Ensemble Learning Algorithm Complexity and Occam’s Razor](https://machinelearningmastery.com/ensemble-learning-and-occams-razor/)
+
+**baseline Model**
+- [How To Get Baseline Results And Why They Matter](https://machinelearningmastery.com/how-to-get-baseline-results-and-why-they-matter/) This guide explains how to generate the baselines(mean prediction for regression, majority class for classification) so you can prove your "fancy model" is actually learning.
+
+**Model Drift**
+- [Why You Should Care About Data and Concept Drift](https://www.evidentlyai.com/blog/machine-learning-monitoring-data-and-concept-drift) This comprehensive guide distinguishes between "Concept Drift" (the meaning of the target variable changes) and "Data Drift" (the input features change). It reinforces our key point: models don't break like traditional software; they decay, meaning you must actively monitor and retrain them.
+
+**A/B testing**
+- [A/B Testing Machine Learning Models](https://mlinproduction.com/ab-test-ml-models-deployment-series-08/)
+- [The What, Why, and How of A/B Testing in Machine Learning](https://mlops.community/blog/the-what-why-and-how-of-a-b-testing-in-ml)
+- These article bridges the gap between data science and product management. It explains how to route half of your live users to Model A (the control) and the other half to Model B (the challenger) to measure the exact "actual business impact" mentioned in your answer key.
 
 ---
 
@@ -2063,7 +2322,19 @@ Target variables in classification get integer labels. Scikit-learn's LabelEncod
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Standardization & Normalization**
+- [Feature Scaling and Why is it Important](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/) This guide provides the exact mathematical formulas for both techniques. It explicitly  shows how a single extreme outlier will completely compress the rest of the data in Min-Max scaling, which is why Z-score normalization (Q1) is often preferred for algorithms like SVMs and Neural Networks.
+
+**Data Leakage**
+-  [How to Avoid Data Leakage When Performing Data Preparation][(https://machinelearningmastery.com/data-preparation-without-data-leakage/) This resource breaks down the strict protocol for the .fit() and .transform() methods. It explains exactly why you must fit the scaler on the training data only, and then use that exact same scaler to transform the test data.
+
+**Outlier detection**
+- [Outlier Detection Methods](https://www.analyticsvidhya.com/blog/2021/05/feature-engineering-how-to-detect-and-remove-outliers-with-python-code/)
+- [Outlier detection methods in Machine Learning](https://towardsdatascience.com/outlier-detection-methods-in-machine-learning-1c8b7cca6cb8/)
+  
+**Encoding Target Variables**
+- [LabelEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html) The official documentation explicitly states the best practice outlined in your answer. It notes that LabelEncoder should be used to transform non-numerical labels (as long as they are hashable and comparable) into integers ($0, 1, 2, ...$), and it strictly warns that this should be used for encoding target values (y), not the input features (X).
+- [Detailed Insights on Encoders in Machine Learning](https://code-b.dev/blog/encoders-machine-learning)
 
 ---
 
@@ -2130,8 +2401,22 @@ ML is 80% data understanding, 20% modeling. Knowing your data, defining the righ
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Machine Learning Pipeline**
+- [ML pipeline](https://www.ibm.com/think/topics/machine-learning-pipeline) IBM provides a comprehensive breakdown of the standard ML workflow. It explicitly details the three major stages (Data Processing, Model Development, and Model Deployment). It explains why data processing (collecting, wrangling, cleaning) must happen first, followed by model training/evaluation, and finally deployment.
 
+**Proper validation strategy**
+  - [Validation in Machine Learning](https://www.coursera.org/articles/what-is-cross-validation-in-machine-learning) This article details exactly how partitioning data properly prevents a model from memorizing noise. It walks through k-fold cross-validation step-by-step, explaining how evaluating the model across multiple validation datasets catches overfitting (when a model performs perfectly on training data but poorly on the validation folds).
+
+**Preventing Data Leakage**
+ - [12. Common pitfalls and recommended practices](https://scikit-learn.org/stable/common_pitfalls.html)
+ - [Data Leakage Tutorial](https://www.kaggle.com/code/alexisbcook/data-leakage)
+
+**Ensemble Diversity**
+- [Introduction to Ensemble Diversity for Machine Learning](https://machinelearningmastery.com/ensemble-diversity-for-machine-learning/) This article dives into the specific heuristic of ensemble diversity. It explains the exact logic of Q4: a powerful ensemble strictly relies on contributing models making different errors for the same inputs. It details how to mathematically force this diversity by varying the algorithms, training data subsets, or hyperparameter initializations.
+
+**Rules of Machine Learning**
+- [Best Practices for ML Engineering](https://developers.google.com/machine-learning/guides/rules-of-ml) This is an industry-standard manifesto for deploying ML in the real world. It strongly backs up our answer for Q5, specifically through different directives and the emphasis on deeply understanding the data metrics and the exact problem you are trying to solve before ever spinning up a complex deep learning framework.
+ 
 ---
 
 ## 🎉 Challenge Complete!
