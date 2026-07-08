@@ -879,7 +879,14 @@ Trees handle categoricals natively (a is false), don't need scaling (b is false)
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Gini Impurity & Information Gain**
+- [Decision Trees Explained](https://towardsdatascience.com/decision-trees-explained-entropy-information-gain-gini-index-ccp-pruning-4d78070db36c/) This article walks through the exact manual calculations for a split. It breaks down the formula for Gini Impurity: $Gini = 1 - \sum_{i=1}^{c} (p_i)^2$. It explicitly proves our answer for Q2 by showing that a perfectly pure node equals $0$, while an evenly split node (50/50) maxes out at $0.5$. It also shows how the algorithm subtracts this impurity from the parent node to calculate "Information Gain" (Q1).
+
+**Overfitting Problem & Pruning**
+- [Tree Based Algorithms](https://www.analyticsvidhya.com/blog/2016/04/tree-based-algorithms-complete-tutorial-scratch-in-python/) This comprehensive guide devotes an entire section to the exact problem described in Q3. It explains why an unconstrained tree captures noise rather than patterns. It then covers the solutions (Q4), explaining the difference between pre-pruning (setting hyperparameters like max_depth before training) and post-pruning (letting the tree grow completely and then mathematically trimming the useless branches).
+
+**Model Properties & Advantages**
+- [Decision Trees](https://scikit-learn.org/stable/modules/tree.html) The official documentation explicitly lists the advantages and disadvantages. It specifically confirms that "Trees require little data preparation. Other techniques often require data normalization" (proving scaling isn't needed) while also explicitly stating as its first disadvantage: "Decision-tree learners can create over-complex trees that do not generalize the data well. This is called overfitting."
 
 ---
 
