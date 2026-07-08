@@ -953,7 +953,17 @@ More trees means more stable predictions. After 100-500 trees, diminishing retur
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Mechanics of Bagging & Randomness**
+- [Bagging and Random Forest](https://machinelearningmastery.com/bagging-and-random-forest-for-imbalanced-classification/) This breaks down the exact difference between standard Bootstrap Aggregation (Q1) and the Random Forest extension (Q2). It explains the underlying math of sampling with replacement, showing how forcing individual trees to train on restricted, randomized subsets decorrelates the models, preventing them from making the exact same structural splits.
+
+**variance and better generalization**
+- [Random Forests and the Bias-Variance](https://medium.com/data-science/random-forests-and-the-bias-variance-tradeoff-3b77fee339b4)
+
+**Out-of-Bag (OOB) Evaluation**
+- [Out of Bag (OOB) score in Random Forest](https://medium.com/data-science/what-is-out-of-bag-oob-score-in-random-forest-a7fa23d710) This article provides the statistical proof for our explanation. Because bootstrap samples are drawn with replacement, the probability of a specific row not being picked in a given sample approaches $1/e$, meaning roughly 37% of the data is left out of any individual tree's training set. This article walks through exactly how to pass those "left out" rows back through the specific trees that haven't seen them to calculate an unbiased error estimate.
+
+**Increasing number of trees in Random Forest**
+- [OOB Errors for Random Forests](https://scikit-learn.org/stable/auto_examples/ensemble/plot_ensemble_oob.html) This is the official code snippet designed to prove this exact concept. It plots the Out-of-Bag error rate against the n_estimators hyperparameter. The graph explicitly shows the diminishing returns as the number of trees increases.
 
 ---
 
