@@ -1030,7 +1030,17 @@ XGBoost adds L1/L2 regularization on leaf weights, uses approximate split-findin
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Bagging vs Boosting**
+- [Bagging vs Boosting in Machine Learning](https://www.geeksforgeeks.org/machine-learning/bagging-vs-boosting-in-machine-learning/)
+
+**AdaBoost**
+- [AdaBoost : A Brief Introduction](https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/) This article walks through the exact mathematical steps too. It shows the formula for calculating the "Amount of Say" (Alpha) and demonstrates how misclassified samples have their weights mathematically increased so the next sequential stump is forced to focus on them.
+
+**Gradient Boosting**
+- [Gradient Boosting Algorithm](https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/)
+
+**The XGBoost Upgrades**
+- [Introduction to Boosted Trees](https://xgboost.readthedocs.io/en/stable/tutorials/model.html) The official documentation explicitly outlines the exact upgrades mentioned in our answer key. It shows the mathematical objective function that includes $L_1$ and $L_2$ regularization on the leaf weights, and it explains the approximate split-finding algorithm that allows it to build trees much faster than standard Gradient Boosting.
 
 ---
 
