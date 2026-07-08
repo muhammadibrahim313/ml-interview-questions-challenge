@@ -1107,7 +1107,14 @@ High C = narrow margin, fewer training errors (overfitting risk). Low C = wider 
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Margins, Hyperplanes, and Support Vectors**
+- [Everything one should know about — Support Vector Machines (SVM)](https://medium.com/analytics-vidhya/everything-one-should-know-about-support-vector-machines-svm-18e6d3f96f49) This guide explicitly defines both terms using the same logic as in our answer key. It explains that the algorithm's primary goal is finding the decision boundary with the maximum width (the margin), and specifically confirms that removing or moving the "Support Vectors" on the edge of that margin is the only thing that alters the hyperplane.
+
+**The Kernel Trick**
+- [Kernel Density Estimation](https://towardsdatascience.com/kernel-density-estimation-explained-step-by-step-7cc5b5bc4517/) This is a deep dive into the specific mathematical "sorcery" mentioned in Q3. It proves exactly how the kernel function acts as a modified dot product, representing pairwise similarity comparisons in a higher-dimensional space without explicitly applying the transformations, saving massive amounts of computation.
+
+**Kernels and The C Parameter**
+- [The C Parameter in Support Vector Machines](https://www.baeldung.com/cs/ml-svm-c-parameter) This computer science guide is entirely dedicated to the exact tradeoff described in Q5. It explicitly details how a "Small C Value" allows for a large/wider margin with more training errors (better generalization), while a "Large C Value" forces a narrow margin to perfectly classify training points, severely increasing the risk of overfitting.
 
 ---
 
