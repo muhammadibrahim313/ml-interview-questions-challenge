@@ -1181,7 +1181,18 @@ With K=1, each point's nearest neighbor is itself. So training error = 0 always.
 
 ### Resources
 
-> 📚 *Resources for this topic will be added here*
+**Lazy learning**
+- [Why K-Nearest Neighbors (KNN) is called a Lazy Learner](https://www.geeksforgeeks.org/machine-learning/why-is-knn-a-lazy-learner/) This guide explicitly addresses Q1. It defines the technically "Lazy" (instance-based) algorithms, explaining that KNN has no true training phase and defers all the heavy computational math until the exact moment a prediction is requested.
+
+**K-Nearest Neighbors Algorithm Deep study**
+- [What is K Nearest Neighbors?](https://www.youtube.com/watch?v=abnL_GUGub4)
+- [Guide to K-Nearest Neighbors Algorithm in Machine Learning](https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm-clustering/)
+
+**Distance Measures for Machine Learning**
+- [4 Distance Measures for Machine Learning](https://machinelearningmastery.com/distance-measures-for-machine-learning/) it breaks down the exact math behind Euclidean (straight-line), Manhattan (grid-like), and Minkowski distances. ie provides the Python code for each and explains exactly when to use which metric based on the dimensionality of your data (Q5).
+
+**Why, How and When to Scale your Features**
+- [All about Feature Scaling](https://towardsdatascience.com/all-about-feature-scaling-bcc0ad75cb35/)
 
 ---
 
